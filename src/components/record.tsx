@@ -3,9 +3,9 @@ import { Text, View } from "react-native";
 interface RecordProps {
   id: string;
   date: string;
-  inquiry: string;
+  inquiry?: string;
   divination?: string;
-  revelation?: string;
+  revelation: string;
 }
 
 const Record = ({ date, inquiry, divination, revelation }: RecordProps) => {
@@ -17,20 +17,20 @@ const Record = ({ date, inquiry, divination, revelation }: RecordProps) => {
         </Text>
       </View>
       <View className="items-center justify-center border-blue-950 border-2 border-dotted p-2">
-        <View>
-          <Text>{inquiry}</Text>
-        </View>
+        {inquiry && (
+          <View>
+            <Text className="text-xl font-semibold">{inquiry}</Text>
+          </View>
+        )}
 
         {divination && (
           <View>
             <Text>{divination}</Text>
           </View>
         )}
-        {revelation && (
-          <View>
-            <Text>{revelation}</Text>
-          </View>
-        )}
+        <View>
+          <Text>{revelation}</Text>
+        </View>
       </View>
     </View>
   );

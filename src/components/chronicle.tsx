@@ -4,9 +4,9 @@ import Record from "./record";
 interface TarotRecord {
   id: string;
   date: string;
-  inquiry: string;
+  inquiry?: string;
   divination?: string;
-  revelation?: string;
+  revelation: string;
 }
 
 const Chronicle = () => {
