@@ -1,20 +1,14 @@
-import { StyleSheet, Text, View } from "react-native";
+import Chronicle from "@/components/chronicle";
+import { View } from "react-native";
 
 export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
-      <Text className="text-xl font-bold text-blue-500">
-        Welcome to Nativewind!
-      </Text>
+    <View className={styles.container}>
+      <Chronicle />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+const styles = {
+  container: `flex-1 items-center justify-center bg-gray-100`,
+};
