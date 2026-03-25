@@ -2,11 +2,11 @@
 
 ## Description
 
-This is an application.
+This is a simple mobile application that lets users log tarot divinations or any other divinations. By extension, it can be used as a simple dream journal as well.
 
 ## How it works
 
-It just does.
+It uses React Native Expo to be cross platform. It also uses TailwindCSS (or it's React Native equivalent, Nativewind) for styling. Although it can be used as a website, it was designed for mobile use first and foremost.
 
 ## Usage
 
@@ -16,7 +16,7 @@ Use this however you see fit.
 
 ### **_Prerequistes_**
 
-- Android
+- A mobile phone or emulator
 - [NodeJS](https://nodejs.org) v23 (for manual or dev)
 
 ### Reccommended
