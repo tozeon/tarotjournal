@@ -36,7 +36,7 @@ export const TarotCard = ({ name, position }: Tarot) => {
         resizeMode="contain"
       />
       {position && (
-        <Text className="bg-emerald-500 rounded-lg p-1">{position}</Text>
+        <Text className="bg-purple-400 rounded-lg p-1">{position}</Text>
       )}
     </View>
   );

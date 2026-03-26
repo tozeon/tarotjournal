@@ -11,6 +11,7 @@ interface RecordProps {
     positions?: { [position: string]: string };
   };
   revelation?: string;
+  tags?: string[];
 }
 
 const Record = ({
@@ -22,7 +23,7 @@ const Record = ({
   revelation,
 }: RecordProps) => {
   return (
-    <View className="p-2 mb-2">
+    <View className="p-2 mb-2 ">
       <View>
         <Text className="text-gray-400 flex gap-1 w-fit">
           <Text>{date}</Text>
@@ -31,23 +32,25 @@ const Record = ({
       <View className="items-center justify-center p-2">
         {inquiry && (
           <View>
-            <Text className="text-xl font-semibold text-gray-300">
+            <Text className="text-xl font-semibold text-gray-300 text-left">
               {inquiry}
             </Text>
           </View>
         )}
 
-        <Text className="text-sm text-gray-400 m-1 bg-slate-800">
-          {divinationType}
-        </Text>
+        <View className="w-full">
+          <TarotDiv
+            divinationType={divinationType}
+            cards={divination.cards}
+            positions={divination.positions}
+          />
 
-        <TarotDiv cards={divination.cards} positions={divination.positions} />
-
-        {revelation && (
-          <View className="mt-2">
-            <Text>{revelation}</Text>
-          </View>
-        )}
+          {revelation && (
+            <View className="p-4 bg-sky-700 w-full rounded-b-3xl">
+              <Text className="text-left">{revelation}</Text>
+            </View>
+          )}
+        </View>
       </View>
     </View>
   );
