@@ -25,10 +25,10 @@ const Record = ({
   return (
     <View className="p-2 mb-2">
       <View className="items-center justify-center p-2">
-        <View className="flex flex-row justify-between items-center w-full mb-2">
-          <Text className="flex-1 text-gray-400 flex gap-1">{date}</Text>
+        <View className="flex flex-row justify-between w-full mb-2">
+          <Text className="flex-1 text-gray-700 flex gap-1">{date}</Text>
           {inquiry && (
-            <Text className="text-center text-xl font-semibold text-gray-300">
+            <Text className="text-center text-xl font-bold text-purple-900">
               {inquiry}
             </Text>
           )}
