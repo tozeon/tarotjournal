@@ -23,22 +23,19 @@ const Record = ({
   revelation,
 }: RecordProps) => {
   return (
-    <View className="p-2 mb-2 ">
-      <View>
-        <Text className="text-gray-400 flex gap-1 w-fit">
-          <Text>{date}</Text>
-        </Text>
-      </View>
+    <View className="p-2 mb-2">
       <View className="items-center justify-center p-2">
-        {inquiry && (
-          <View>
-            <Text className="text-xl font-semibold text-gray-300 text-left">
+        <View className="flex flex-row justify-between items-center w-full mb-2">
+          <Text className="flex-1 text-gray-400 flex gap-1">{date}</Text>
+          {inquiry && (
+            <Text className="text-center text-xl font-semibold text-gray-300">
               {inquiry}
             </Text>
-          </View>
-        )}
+          )}
+          <View className="flex-1"></View>
+        </View>
 
-        <View className="w-full">
+        <View className="w-11/12">
           <TarotDiv
             divinationType={divinationType}
             cards={divination.cards}
