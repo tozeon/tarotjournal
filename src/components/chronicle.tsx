@@ -2,6 +2,8 @@ import Record from "@/components/record";
 import { TarotRecord, tarotRecords } from "@/data/tarotRecords";
 import { ScrollView } from "react-native";
 
+// TODO: group by date
+
 const Chronicle = () => {
   return (
     <ScrollView className="flex-1 bg-purple-300 border-2 p-6 w-full md:w-5/12">

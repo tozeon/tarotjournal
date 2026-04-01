@@ -23,7 +23,7 @@ export const tarotRecords: TarotRecord[] = [
   },
   {
     id: "2",
-    date: "Dec 2, 2000",
+    date: "Dec 1, 2000",
     inquiry: "Should I take the job?",
     divinationType: "Single Card",
     divination: {
